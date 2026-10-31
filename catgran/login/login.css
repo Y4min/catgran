@@ -1,0 +1,99 @@
+#nome{
+    text-align: center;
+    
+}
+
+body{
+    
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+h2{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+
+#sub{
+    margin-top: 0px;
+}
+
+#principal{
+    width: 500px;
+    padding: 25px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgb(67, 66, 66);
+
+}
+
+
+button{
+    margin: 25px;
+    padding: 10px 24px;
+    background-color: rgb(50, 50, 50);
+    color: aliceblue;
+    border: 1px solid rgb(67, 66, 66);
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+
+#icon{
+   position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+}
+
+input{
+    
+    padding: 10px 24px;
+    background-color: rgb(50, 50, 50);
+    color: aliceblue;
+    border: 1px solid rgb(67, 66, 66);
+    border-radius: 8px;
+    font-size: 16px;
+
+    
+}
+
+#dados {
+    display: flex;
+    flex-direction: row;       /* lado a lado (é o padrão do flex) */
+    align-items: center;       /* alinha os dois lados no meio na vertical */
+    gap: 30px;                 /* espaço entre foto e campos */
+}
+
+#lado-campos {
+    display: flex;
+    flex-direction: column;    /* inputs um abaixo do outro */
+}
+
+#lado-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(67, 66, 66);
+    background-color: rgb(50, 50, 50);
+}

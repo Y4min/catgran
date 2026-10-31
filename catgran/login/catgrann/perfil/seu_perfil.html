@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catgran</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+    <div id="topoDireito">
+        <button id="btnMais" title="Novo post" hidden>+</button>
+        <button id="btnSair">Sair</button>
+    </div>
+
+    
+    <div id="perfil">
+        <div id="foto">
+            <img id="fotoPerfil" src="../../imagens/perfil_provisorio.png" alt="Foto de perfil">
+        </div>
+
+        <div id="info">
+            <h2 id="nome1">nome de usuario</h2> 
+            <p id="nomeCompleto"></p>
+
+            <div id="estatisticas">
+                <div id="post">
+                    <p id="qtdPosts">0</p>
+                    <p>post</p>
+                </div>
+                <div id="seguidores">
+                    <p id="qtdSeguidores">0</p>
+                    <p>miauseguidores</p>
+                </div>
+                <div id="seguindo">
+                    <p id="qtdSeguindo">0</p>
+                    <p>miauseguindo</p>
+                </div>
+            </div>
+
+            
+            <p id="biogafia">biografia</p>
+        </div>
+    </div>
+
+
+    <div id="postagens">
+        <button id="btnPostar">Poste algo para seus miauseguidores!</button>
+        <div id="grade"></div>
+    </div>
+
+    <dialog id="modalPost">
+        <h3>Novo post</h3>
+
+        <img id="previewPost" alt="Pré-visualização" hidden>
+
+        <button type="button" id="escolherPost">Escolher foto</button>
+        <input type="file" id="arquivoPost" accept="image/*" hidden>
+
+        <div class="acoes">
+            <button type="button" id="cancelarPost">Cancelar</button>
+            <button type="button" id="publicarPost" disabled>Publicar</button>
+        </div>
+    </dialog>
+
+    <nav class="barr">
+        <div class="barr-content">
+            <a href="../feed.html"><img src="../imagens/casa.png" alt="Início" class="nav-icon c"></a>
+            <a href="../pesquisa/pesquisa.html"><img src="../imagens/lupa.png" alt="Buscar" class="nav-icon l"></a>
+            <a href="../perfil/seu_perfil.html"><img src="../imagens/perfil_provisorio.png" alt="Perfil" class="nav-icon-profile p"></a>
+        </div>
+    </nav>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

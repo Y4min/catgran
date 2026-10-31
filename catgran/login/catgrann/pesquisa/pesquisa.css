@@ -1,0 +1,119 @@
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(20, 20, 20);
+}
+ 
+button {
+    margin: 10px;
+}
+
+div {
+    column-width: 300px;
+   
+}
+ 
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    
+}
+
+
+#margem {
+    margin: 30px 100px;
+}
+
+.barr {
+            position: fixed;
+            background-color: black;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            width: 100%; 
+            z-index: 1000; 
+            border-top: 1px solid #262626; 
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+
+        .barr-content {
+            width: 100%;
+            max-width: 500px;        
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;     
+            padding: 0 16px;
+        }
+
+        .nav-icon {
+            height: 26px;
+            width: 26px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        .nav-icon-profile {
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #ffffff; 
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+
+        /* pp */
+    .pesquisa-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+.barra-pesquisa {
+    width: 630px;
+    height: 35px;
+    background-color: #24282c;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 10px;
+    color: #aaa;
+}
+
+
+.barra-pesquisa input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+.barra-pesquisa input::placeholder {
+    color: #aaa;
+}
+
+
+.limpar-input {
+    background-color: #aaa;
+    color: #222;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+}

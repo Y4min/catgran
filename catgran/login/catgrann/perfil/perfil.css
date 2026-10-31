@@ -1,0 +1,253 @@
+
+[hidden] {
+    display: none !important;   
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: #f7f7f7;
+}
+
+
+#topoDireito {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#btnSair,
+#btnMais {
+    background-color: #4e4e4f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#btnSair {
+    padding: 8px 16px;
+}
+
+#btnMais {
+    width: 36px;
+    font-size: 22px;
+    line-height: 1;
+}
+
+#btnSair:hover,
+#btnMais:hover {
+    background-color: #f8f5b0;
+    color: black;
+}
+
+#perfil {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 935px;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+#foto {
+    flex-shrink: 0;
+}
+
+#foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+#nome1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+#estatisticas {
+    display: flex;
+    gap: 40px;
+}
+
+#estatisticas div {
+    display: flex;
+    gap: 5px;
+}
+
+#estatisticas p:first-child {
+    font-weight: 600;
+}
+
+#nomeCompleto {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#biogafia {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#postagens {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    border-top: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+#postagens button {
+    background-color: #4e4e4f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#postagens button:hover {
+    background-color: #f8f5b0;
+    color: black;
+}
+
+#grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+
+#grade img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+#modalPost {
+    margin: auto;
+    width: min(420px, 90vw);
+    padding: 24px;
+    border: 1px solid #4e4e4f;
+    border-radius: 12px;
+    background-color: rgb(30, 30, 30);
+    color: #f7f7f7;
+}
+
+#modalPost::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#modalPost[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#previewPost {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#modalPost button {
+    background-color: #4e4e4f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#modalPost button:hover:not(:disabled) {
+    background-color: #f8f5b0;
+    color: black;
+}
+
+#modalPost button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#modalPost .acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    #perfil {
+        gap: 20px;
+        padding: 70px 15px 20px;
+    }
+
+    #foto img {
+        width: 77px;
+        height: 77px;
+    }
+
+    #estatisticas {
+        gap: 20px;
+    }
+
+    #estatisticas div {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+}
+
+.barr {
+            position: fixed;
+            background-color: black;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            width: 100%; 
+            z-index: 1000; 
+            border-top: 1px solid #262626; 
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+
+        .barr-content {
+            width: 100%;
+            max-width: 500px;        
+            display: flex;
+            justify-content: space-around; 
+            align-items: center;     
+            padding: 0 16px;
+        }
+
+        .nav-icon {
+            height: 26px;
+            width: 26px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        .nav-icon-profile {
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #ffffff; 
+            cursor: pointer;
+        }

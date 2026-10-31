@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #0b0f12;
+    color: white;
+    min-height: 100vh;
+    
+}
+
+
+/* MENU LATERAL */
+
+
+.menu-lateral {
+    width: 65px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    background-color: #0b0f12;
+}
+
+
+.logo {
+    font-size: 30px;
+    margin-bottom: 65px;
+}
+
+
+.menu-lateral nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+
+.icone {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+.icone:hover {
+    opacity: 0.6;
+}
+
+
+.perfil-menu img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+
+.menu-final {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+
+.principal {
+    margin-left: 65px;
+    width: calc(100% - 65px);
+    min-height: 100vh;
+    padding-top: 25px;
+}
+
+
+/* BARRA DE PESQUISA */
+
+
+.pesquisa-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+.voltar {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+.barra-pesquisa {
+    width: 630px;
+    height: 35px;
+    background-color: #24282c;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 10px;
+    color: #aaa;
+    
+}
+
+
+.barra-pesquisa input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+.barra-pesquisa input::placeholder {
+    color: #aaa;
+}
+
+
+.limpar-input {
+    background-color: #aaa;
+    color: #222;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+
+/* HISTÓRICO */
+
+
+.historico {
+    width: 640px;
+    margin: 35px auto 0;
+}
+
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.titulo h3 {
+    font-size: 14px;
+}
+
+
+.titulo button {
+    color: #829bff;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+/* USUÁRIOS */
+
+
+.usuario {
+    display: flex;
+    align-items: center;
+    height: 51px;
+    gap: 10px;
+}
+
+
+.usuario img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    min-width: 0;
+}
+
+
+.dados strong {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.dados span {
+    font-size: 12px;
+    color: #a8a8a8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.remover {
+    color: #aaa;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+
+.remover:hover {
+    color: white;
+}
+
+
+.icone-pesquisa {
+    width: 38px;
+    height: 38px;
+    background-color: #242424;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.link-perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

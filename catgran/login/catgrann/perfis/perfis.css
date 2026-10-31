@@ -1,0 +1,116 @@
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: #f7f7f7;
+}
+
+
+#perfil {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 935px;
+    margin: 0;
+    padding: 40px 20px;
+}
+#foto {
+    flex-shrink: 0;
+}
+#foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+}
+.nome1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+#estatisticas {
+    display: flex;
+    gap: 40px;
+}
+#estatisticas div {
+    display: flex;
+    gap: 5px;
+}
+#estatisticas p:first-child {
+    font-weight: 600;
+}
+#nomeCompleto {
+    font-weight: 600;
+    font-size: 14px;
+}
+#biogafia {
+    font-size: 14px;
+    line-height: 1.4;
+}
+#postagens {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    border-top: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+#postagens button:hover {
+    background-color: #f8f5b0;
+    color: black;
+}
+#grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+#grade img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+#postagens img {
+    width: 300px;
+    height: 300px;
+}
+
+#postagens {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 1px solid #4e4e4f;
+}
+/* celular */
+@media (max-width: 600px) {
+    #perfil {
+        gap: 20px;
+        padding: 70px 15px 20px;
+    }
+    #foto img {
+        width: 77px;
+        height: 77px;
+    }
+    #estatisticas {
+        gap: 20px;
+    }
+    #estatisticas div {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+}
+
+.voltar {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
